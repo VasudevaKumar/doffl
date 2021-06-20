@@ -1,0 +1,533 @@
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Create Survay Page</title>
+
+		<!-- Custom fonts for this template -->
+		<link href="css/all.min.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="css/custom-style.css" rel="stylesheet">
+		<!-- Custom styles for this page -->
+		<link href="css/dataTables.bootstrap4.min.css" rel="stylesheet">
+		</head>
+
+		<body id="page-top">
+
+		<!-- Page Wrapper -->
+		<div id="wrapper">
+
+		<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+		<a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+		<div class="sidebar-brand-text mx-3">Survay Admin </div>
+		</a>
+		<hr class="sidebar-divider my-0">
+		<li class="nav-item">
+		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+		<i class="fas fa-fw fa-cog"></i>
+		<span> Manage Survay </span>
+		</a>
+		<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+		<div class="bg-white py-2 collapse-inner rounded">
+		<a class="collapse-item" href="#"> Services </a>
+		<a class="collapse-item" href="#"> Survay demo </a>
+		</div>
+		</div>
+		</li>
+
+
+		<hr class="sidebar-divider">
+		
+		<div class="sidebar-heading">
+		Another Links
+		</div>
+
+
+		<li class="nav-item">
+		<a class="nav-link" href="survay-list.html">
+		<i class="fas fa-fw fa-table"></i>
+		<span>Survay List </span></a>
+		</li>
+		
+		<li class="nav-item active">
+		<a class="nav-link" href="create-survay.html">
+		<i class="fas fa-fw fa-pencil-square-o"></i>
+		<span>Create Survay </span></a>
+		</li>
+		
+		<li class="nav-item">
+		<a class="nav-link" href="admin-survay-record.html">
+		<i class="fas fa-fw fa-pencil-square-o"></i>
+		<span>Admin Survay Record </span></a>
+		</li>
+
+		<!-- Divider -->
+		<hr class="sidebar-divider d-none d-md-block">
+
+		<div class="text-center d-none d-md-inline">
+		<button class="rounded-circle border-0" id="sidebarToggle"></button>
+		</div>
+		</ul>
+
+		<!-- Content Wrapper -->
+		<div id="content-wrapper" class="d-flex flex-column">
+
+		<div id="content"> <!-- Main Content -->
+		
+		<nav class="navbar navbar-expand navbar-light bg-white topbar mb-5 static-top shadow">	
+		<form class="form-inline">
+		<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+		<i class="fa fa-bars"></i>
+		</button>
+		</form>
+		
+		<ul class="navbar-nav ml-auto">
+		</ul>
+		</nav>
+
+		<div class="container-fluid"> <!-- Begin Page Content -->
+
+		<nav>
+		<div class="card">
+		<div class="nav custom-nav nav-tabs" id="nav-tab" role="tablist">
+		<a class="nav-item nav-link active mr-3" id="nav-home-tab" data-toggle="tab" href="#nav-builder" role="tab" aria-controls="nav-home" aria-selected="true"> <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i> </a>
+		<a class="nav-item nav-link mr-3" id="nav-profile-tab" data-toggle="tab" href="#nav-design" role="tab" aria-controls="nav-profile" aria-selected="false">  <i class="fa fa-tint fa-2x" aria-hidden="true"></i>  </a>
+		<a class="nav-item nav-link mr-3" id="nav-contact-tab" data-toggle="tab" href="#nav-link" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fa fa-link fa-2x" aria-hidden="true"></i> </a>
+		<a class="nav-item nav-link mr-3" id="nav-view-tab" data-toggle="tab" href="#nav-view" role="tab" aria-controls="nav-view" aria-selected="false"><i class="fa fa-eye fa-2x" aria-hidden="true"></i>  </a>
+
+		</div>
+		</div>
+		</nav>
+
+		<div class="tab-content mt-4" id="nav-tabContent">
+		<div class="tab-pane fade show active" id="nav-builder" role="tabpanel" aria-labelledby="nav-builder">
+		<div class="card shadow mb-5">
+
+		<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+		<h6 class="m-0 font-weight-bold text-secondary"> Add Questions </h6>
+		<ul class="navbar-nav ml-auto float-right">
+		<li class="nav-item dropdown no-arrow">
+		<a class="nav-link dropdown-toggle padding-zero" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400" aria-hidden="true"></i>
+		</a>
+		<div class="dropdown-menu shadow animated--fade-in" aria-labelledby="userDropdown">
+
+		<a class="dropdown-item" href="#">  
+		Delete
+		</a>
+		<a class="dropdown-item" href="#">
+		Duplicate
+		</a>
+		</div>
+		</li>
+		</ul>			
+
+		</div>
+		<div class="card-body">
+		<div class"main-formpage"> 
+
+		<form>
+		<label> <span class="h5 badge badge-custom"> <i class="fas fa-check text-white"></i> 1 </span> Question </label>
+		<div class="input-group">
+		<input id="" type="text" class="form-control" placeholder="type question here...">
+		</div>
+		</form>
+
+		<div class="row"> 
+		<div class="col-lg-6 mb-4"> 
+
+		</div>			
+		</div>
+
+		<div class="card mb-4 bg-light">
+		<div class="card-header py-2">
+		<span> Add Options </span>
+		</div>
+
+		<div class="card-body">			
+		<div class="input-group mb-3">
+		<div class="input-group-prepend">
+		<label class="input-group-text" for="inputGroupSelect01">Options</label>
+		</div>
+		<select class="custom-select" id="inputGroupSelect01">
+		<option selected>Choose...</option>
+		<option value="1">One</option>
+		<option value="2">Two</option>
+		<option value="3">Three</option>
+		</select>
+		</div>
+		</div>
+		</div>
+
+		<button class="btn btn-primary color-white btn-sm float-right" href="#"> Add Options  </button>
+
+		</div>
+		</div>
+		<div class="card-footer py-3">
+
+		</div>
+		</div>
+
+		<ul class="navbar-nav ml-auto cstm-design">
+		<li class="nav-item dropdown no-arrow mx-1">
+		<button type="button" class="dropdown-toggle btn btn-success btn-md" href="#" id="alertsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-question-circle fa-1x color-secondary"></i> Add your Question...</button>
+
+		<div class="dropdown-list dropdown-menu scrollable-menu shadow animated--fade-out" aria-labelledby="alertsDropdown">
+		<a class="dropdown-item d-flex align-items-center" href="#">
+		<div class="mr-3">
+		<div class="icon-circle bg-secondary">
+		<i class="fas fa-tv text-white"></i>
+		</div>
+		</div>
+		<div>
+		Welcome Screen
+		</div>
+		</a>
+
+		<a class="dropdown-item d-flex align-items-center" href="#">
+		<div class="mr-3">
+		<div class="icon-circle bg-warning">
+		<i class="fas fa-tv text-white"></i>
+		</div>
+		</div>
+		<div>
+		Thank you Screen
+		</div>
+		</a>
+
+
+		<a class="dropdown-item d-flex align-items-center" href="#">
+		<div class="mr-3">
+		<div class="icon-circle bg-primary">
+		<i class="fas fa-check text-white"></i>
+		</div>
+		</div>
+		<div>
+		Multiple Choice
+		</div>
+		</a>
+
+
+		<a class="dropdown-item d-flex align-items-center" href="#">
+		<div class="mr-3">
+		<div class="icon-circle bg-success">
+		<i class="fas fa-phone text-white"></i>
+		</div>
+		</div>
+		<div>
+		Phone Number
+		</div>
+		</a>
+
+
+		<a class="dropdown-item d-flex align-items-center" href="#">
+		<div class="mr-3">
+		<div class="icon-circle bg-danger">
+		<i class="fas fa-image text-white"></i>
+		</div>
+		</div>
+		<div>
+		Picture Choice
+		</div>
+		</a>
+
+
+		<a class="dropdown-item d-flex align-items-center" href="#">
+		<div class="mr-3">
+		<div class="icon-circle bg-warning">
+		<i class="fas fa-adjust text-white"></i>
+		</div>
+		</div>
+		<div>
+		Yes/No
+		</div>
+		</a>
+
+
+		<a class="dropdown-item d-flex align-items-center" href="#">
+		<div class="mr-3">
+		<div class="icon-circle bg-info">
+		<i class="fas fa-envelope text-white"></i>
+		</div>
+		</div>
+		<div>
+		Email
+		</div>
+		</a>
+
+
+		<a class="dropdown-item d-flex align-items-center" href="#">
+		<div class="mr-3">
+		<div class="icon-circle bg-success">
+		<i class="fas fa-star text-white"></i>
+		</div>
+		</div>
+		<div>
+		Rating
+		</div>
+		</a>
+
+
+		<a class="dropdown-item d-flex align-items-center" href="#">
+		<div class="mr-3">
+		<div class="icon-circle bg-primary">
+		<i class="fas fa-calendar text-white"></i>
+		</div>
+		</div>
+		<div>
+		Date
+		</div>
+		</a>
+
+		<a class="dropdown-item d-flex align-items-center" href="#">
+		<div class="mr-3">
+		<div class="icon-circle bg-secondary">
+		<i class="fas fa-chevron-circle-down text-white"></i>
+		</div>
+		</div>
+		<div>
+		Dropdown
+		</div>
+		</a>
+
+		<a class="dropdown-item d-flex align-items-center" href="#">
+		<div class="mr-3">
+		<div class="icon-circle bg-danger">
+		<i class="fas fa-upload text-white"></i>
+		</div>
+		</div>
+		<div>
+		File Upload
+		</div>
+		</a>
+
+		<a class="dropdown-item d-flex align-items-center" href="#">
+		<div class="mr-3">
+		<div class="icon-circle bg-success">
+		<i class="fas fa-credit-card text-white"></i>
+		</div>
+		</div>
+		<div>
+		Payment
+		</div>
+		</a>
+
+		<a class="dropdown-item d-flex align-items-center" href="#">
+		<div class="mr-3">
+		<div class="icon-circle bg-info">
+		<i class="fas fa-link text-white"></i>
+		</div>
+		</div>
+		<div>
+		Website
+		</div>
+		</a>
+
+		</div>
+		</li>
+		</ul>		  
+		</div> <!--First Builder panel finish here--->
+
+
+		<div class="tab-pane fade" id="nav-design" role="tabpanel" aria-labelledby="nav-design">
+
+		<div class="card shadow mb-4">
+		<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+		<h6 class="m-0 font-weight-bold text-secondary"> Custemize Style... </h6>
+		<ul class="navbar-nav ml-auto float-right">
+		<li class="nav-item dropdown no-arrow">
+		<a class="nav-link dropdown-toggle padding-zero" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400" aria-hidden="true"></i>
+		</a>
+		<div class="dropdown-menu shadow animated--fade-in" aria-labelledby="userDropdown">
+
+		<a class="dropdown-item" href="#">  
+		Delete
+		</a>
+		<a class="dropdown-item" href="#">
+		Duplicate
+		</a>
+		</div>
+		</li>
+		</ul>			
+		</div>
+
+
+		<div class="card-body">
+		<div>			
+		<div class="color-table-custom">
+		<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"> </div>
+
+		<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"> 
+		<div> Font Style </div>
+		<div> 
+		<form class="input-group">
+		<select class="form-control custom-select">
+		<option value="" disabled selected> System fonts..... </option>
+		<option value="1"> Font One </option>
+		<option value="2"> Font Two </option>
+		<option value="3"> Font Three </option>
+		<option value="3"> Font Four </option>
+		<option value="3"> Font Five </option>
+		</select>
+		</form>
+		</div>		 
+		</div>
+
+		<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">			
+		<div> Questions Color  </div> 			
+		<div class="form-group row">			
+		<div class="col-10">			
+		<input class="form-control input-size" type="color" value="#563d7c" id="example-color-input">
+		</div>
+		</div>			
+		</div>
+
+		<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">			
+		<div> Answer Color  </div> 			
+		<div class="form-group row">			
+		<div class="col-10">			
+		<input class="form-control input-size" type="color" value="#01AC1A" id="example-color-input">
+		</div>
+		</div>			
+		</div>
+
+		<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+
+		<div> Button Color  </div> 			
+		<div class="form-group row">			
+		<div class="col-10">			
+		<input class="form-control input-size" type="color" value="#4FA9B3" id="example-color-input">
+		</div>
+		</div>			
+		</div>
+
+		<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+
+		<div> Backgraund Color  </div> 			
+		<div class="form-group row">			
+		<div class="col-10">			
+		<input class="form-control input-size" type="color" value="#EBEBEB" id="example-color-input">
+		</div>
+		</div>			
+		</div>
+
+		<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"> 
+
+		<div> <button type="submit" value="Submit" class="btn btn-primary btn-md" role="button" aria-pressed="true"> Save Changes </button> </div>
+		<div> <button type="reset" value="Reset" class="btn btn-secondary btn-md float-right" role="button" aria-pressed="true"> Reset </button> </div>
+		</div>
+
+		</div>		
+		</div>
+		</div>
+		</div>
+		</div><!---Design panel finish here--->
+
+		<div class="tab-pane fade" id="nav-link" role="tabpanel" aria-labelledby="nav-link">
+
+		<div class="card shadow mb-4">
+		<div class="card-header">
+		<h6 class="m-0 font-weight-bold text-secondary"> Custemize URL... </h6>
+		</div>
+		<div class="card-body ml-4 mr-4 mt-4 mb-4"> 
+
+		<div class="card shadow pl-4 pr-4 pt-4 pb-4">
+		<div class="card-body">
+		<label class="pb-3" for="basic-url"><i class="fa fa-link fa-2x" aria-hidden="true"></i> <span class="pl-3"> Add Your URL </span> </label>
+		<div class="input-group mb-3">
+		<div class="input-group-prepend">
+		<span class="input-group-text" id="basic-addon3">https://example.com/survay/</span>
+		</div>
+		<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+		</div>
+		<div class="py-3 d-flex flex-row align-items-center justify-content-between"> 
+
+		<div class="float-right"> <button type="submit" value="Submit" class="btn btn-primary btn-md" role="button" aria-pressed="true"> Save Changes </button> </div>
+		<div> </div>
+		</div>
+		</div>
+		</div>
+
+		</div>
+		<div class="card-header">
+		</div>
+
+		</div>			
+		</div> <!--URL panel finish here--->
+
+		<div class="tab-pane fade" id="nav-view" role="tabpanel" aria-labelledby="nav-view">
+
+		<div class="card shadow"> 
+		<div class="card-header"> 
+		<h6 class="m-0 font-weight-bold text-secondary"> Preview </h6>
+		</div>
+		<div class="card-body m4"> 
+
+		<div class="card shadow-sm p4"> 
+		<div class="m-5 p4">
+		<img class="card-img-top p4" src="img/undraw_posting_photo.svg" alt="Card image cap">
+		
+		<span class=""> <a href="#" class="btn btn-primary btn-block mt-5">Save Changes</a> </span>
+		</div>
+		</div>		
+		</div>
+		<div class="card-footer"> </div>
+		</div>
+		</div>
+
+
+		</div> <!--container-fluid --->
+
+		</div>
+		<!-- End of Main Content -->
+
+		<!-- Footer -->
+		<footer class="sticky-footer bg-white">
+		<div class="container my-auto">
+		<div class="text-center">
+		</div>
+		</div>
+		</footer>
+		<!-- End of Footer -->
+
+		</div>
+		<!-- End of Content Wrapper -->
+
+		</div>
+		<!-- End of Page Wrapper -->
+
+		<!-- Scroll to Top Button-->
+		<a class="scroll-to-top rounded" href="#page-top">
+		<i class="fas fa-angle-up"></i>
+		</a>
+
+		<!-- Bootstrap core JavaScript-->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.bundle.min.js"></script>
+
+			<!-- Core plugin JavaScript-->
+			<script src="js/jquery.easing.min.js"></script>
+
+			<!-- Custom scripts for all pages-->
+			<script src="js/custom-script.min.js"></script>
+
+			<!-- Page plugins -->
+			<script src="js/jquery.dataTables.min.js"></script>
+			<script src="js/dataTables.bootstrap4.min.js"></script>
+
+			<!-- Page custom scripts -->
+			<script src="js/datatables-demo.js"></script>
+
+		</body>
+
+		</html>
